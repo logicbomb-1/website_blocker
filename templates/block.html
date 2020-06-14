@@ -1,0 +1,24 @@
+<html>
+<head>
+<style>
+textarea {
+  resize: none;
+}
+</style>
+</head>
+<body>
+
+<form action="/wblock" method="POST">
+<label for="block">Enter websites to block(each line):</label>
+
+<textarea id="block" name="block" rows="4" cols="50">
+</textarea>
+  <br><br>
+
+<p>From: <input type="datetime-local" id="fromtime" name="fromtime" required>
+To:  <input type="datetime-local" id="totime" name="totime" required>
+</p>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
